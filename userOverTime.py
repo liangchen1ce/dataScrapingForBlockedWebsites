@@ -22,7 +22,7 @@ def getUNIXTimestamp(year, month):
 
 def getDateDistributionData():
     # Create a session with your Temboo account details
-    session = TembooSession("chenlian", "myFirstApp", "51dc1a9d42e34bcf90a97d6c8bb7ce6e")
+    session = TembooSession("chenlian", "myFirstApp", “key”)
 
     # Instantiate the Choreo
     getRecentMediaForLocationChoreo = GetRecentMediaForLocation(session)
@@ -43,7 +43,7 @@ def getDateDistributionData():
                 # Set the Choreo inputs
                 getRecentMediaForLocationInputs.set_LocationID(id)
                 getRecentMediaForLocationInputs.set_MaxTimestamp(str(timeEnd))
-                getRecentMediaForLocationInputs.set_ClientID("dc9bbb4e063e434a9baf0933923a973c")
+                getRecentMediaForLocationInputs.set_ClientID(“key”)
                 getRecentMediaForLocationInputs.set_MinTimestamp(str(timeStart))
 
                 # Execute the Choreo

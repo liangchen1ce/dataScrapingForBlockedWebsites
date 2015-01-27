@@ -9,7 +9,7 @@ def getLocationIDsInsideMainlandChina():
     locationIDs = set()
 
     # Create a session with your Temboo account details
-    session = TembooSession("chenlian", "myFirstApp", "51dc1a9d42e34bcf90a97d6c8bb7ce6e")
+    session = TembooSession("chenlian", "myFirstApp", “key”)
 
     # Instantiate the Choreo
     searchLocationsChoreo = SearchLocations(session)
@@ -25,7 +25,7 @@ def getLocationIDsInsideMainlandChina():
             searchLocationsInputs.set_Distance("5000")
             searchLocationsInputs.set_Latitude(str(lat))
             searchLocationsInputs.set_Longitude(str(lon))
-            searchLocationsInputs.set_ClientID("dc9bbb4e063e434a9baf0933923a973c")
+            searchLocationsInputs.set_ClientID(“key”)
 
             # Execute the Choreo
             searchLocationsResults = searchLocationsChoreo.execute_with_results(searchLocationsInputs)
